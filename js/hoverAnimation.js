@@ -1,36 +1,35 @@
-// ---------------------- Animación títulos ----------------------
-
-gsap.registerPlugin(ScrollTrigger);
-
-var tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.work__title',
-        end: '+=100 ',
-        scrub: 3,
-    }
-})
-
-var tl1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.about__title',
-        end: '+=100 ',
-        scrub: 3,
-    }
-})
-
-var tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.contact__title',
-        end: '+=100 ',
-        scrub: 3,
-    }
-})
 
 
-tl.from('.work__title', { x: '50vw', duration: 2 })
-tl1.from('.about__title', { x: '50vw', duration: 2 })
-tl2.from('.contact__title', { x: '50vw', duration: 2 })
+// gsap.registerPlugin(ScrollTrigger);
 
+// var tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.work__title',
+//         end: '+=100 ',
+//         scrub: 3,
+//     }
+// })
+
+// var tl1 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.about__title',
+//         end: '+=100 ',
+//         scrub: 3,
+//     }
+// })
+
+// var tl2 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.contact__title',
+//         end: '+=100 ',
+//         scrub: 3,
+//     }
+// })
+
+
+// tl.from('.work__title', { x: '50vw', duration: 2 })
+// tl1.from('.about__title', { x: '50vw', duration: 2 })
+// tl2.from('.contact__title', { x: '50vw', duration: 2 })
 
 // ---------------------- Animación hover proyectos ----------------------
 
@@ -64,7 +63,6 @@ if (!isTouch) {
     
     const onMouseLeave = () => {
         mouseCursor.classList.add('hidden');
-        console.log('aqkj')
     };
 
     const onMouseEnter = () => {
