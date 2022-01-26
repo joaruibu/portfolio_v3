@@ -1,42 +1,11 @@
 
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// var tl = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '.work__title',
-//         end: '+=100 ',
-//         scrub: 3,
-//     }
-// })
-
-// var tl1 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '.about__title',
-//         end: '+=100 ',
-//         scrub: 3,
-//     }
-// })
-
-// var tl2 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '.contact__title',
-//         end: '+=100 ',
-//         scrub: 3,
-//     }
-// })
-
-
-// tl.from('.work__title', { x: '50vw', duration: 2 })
-// tl1.from('.about__title', { x: '50vw', duration: 2 })
-// tl2.from('.contact__title', { x: '50vw', duration: 2 })
-
-// ---------------------- Animación hover proyectos ----------------------
+// ---------------------- Animación move cursor ----------------------
 
 
 let mouseCursor = document.querySelector('.cursor');
-let linkHover   = document.querySelectorAll('a, button');
+let linkHover   = document.querySelectorAll('a');
 let mouseText = document.querySelector('.cursor__text')
+
 
 //Comprobar si es un disp.táctil
 function isTouchDevice() {
@@ -72,12 +41,13 @@ if (!isTouch) {
     
     addEventListeners()
     
-    
+    // Animación hover sobre links
+
     linkHover.forEach(link => {
         
         link.addEventListener('mouseover', () => {
             if (link.className !== 'project__view') {
-                mouseCursor.classList.add('cursor-scaleSmall')
+                mouseCursor.classList.add('cursor-scaleSmall');
             } else {
                 mouseCursor.classList.add('cursor-scaleBig');
                 mouseText.classList.add('visibility')

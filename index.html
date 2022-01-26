@@ -94,8 +94,10 @@
                 <ul class="cabecera__menu flex">
                     <li class="cabecera__menu__elemento"><a href="#work">Work</a></li>
                     <li class="cabecera__menu__elemento"><a href="#about">About</a></li>
+                    <li class="cabecera__menu__elemento"><a href="#resume">Resume</a></li>
                     <li class="cabecera__menu__elemento"><a href="#contact">Contact</a></li>
-                    <li class="cabecera__menu__elemento"><a href="#">Resume</a></li>
+                    <li class="cabecera__menu__elemento cabecera__menu__elemento--mod"><a target="_blank" href="./assets/cv/JoaquínRuiz-Cv-Nov2021.pdf">CV↓</a></li>
+
                 </ul>
             </div>
         </header>
@@ -104,9 +106,13 @@
         <!---------------- Hero --------------->
 
         <section class="hero-container container ">
-            <h1 class="hero__title marginRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut
-                sagittis eros,
-                sit amet mattis velit. Aliquam erat volutpat. Nullam quis nisl et tortor gravida maximus. 
+            <h1 class="hero__title marginRight">
+                Durante 6 años trabajé arquitecto. <br>
+                Ahora diseño y desarrollo webs. <br>
+                ¿Por qué dejé de diseñar casas para desarrollar webs? <br>
+                Porque he descubierto que me gusta. <br>
+                Aquí te enseño lo que hago 
+                 
             </h1>
         </section>
 
@@ -119,17 +125,15 @@
             <article class="work__project marginRight">
 
                 <h3 class="project__title"> HiArchi</h3>
-                <a href="#" target='_blank' title="" class="project__view">
-                    <img src="./assets/img/hiarchi@2x.png" alt="" class="project__img">
-
+                <a href="https://hiarchi.es" target='_blank' title="Ver proyecto HiArchi" class="project__view">
+                    <img src="./assets/img/hiarchi@2x.png" alt="Portada proyecto HiArchi" class="project__img">
                 </a>
 
 
                 <div class="project__info flex">
 
                     <p class="project__info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-                        rerum. Harum expedita rem tenetur distinctio cum illum, nihil qui eaque inventore ut incidunt!
-                        Dignissimos ipsum quisquam dolore saepe rerum velit!</p>
+                        rerum. Harum expedita rem tenetur distinctio cum illum, nihil qui eaque inventore ut incidunt!</p>
 
                     <div class="project__info__details">
                         <ul class="project__info__skills ">
@@ -137,7 +141,7 @@
                             <li>JavaScript</li>
                             <li>Adobe Xd</li>
                         </ul>
-                        <button class="project__info__button"> Ver código</button>
+
 
                     </div>
 
@@ -147,9 +151,8 @@
             <article class="work__project marginRight">
 
                 <h3 class="project__title"> Weather App</h3>
-                <a href="#" target='_blank' title="" class="project__view">
-                    <img src="./assets/img/weather@2x.png" alt="" class="project__img">
-
+                <a href="https://joaruibu.github.io/Weather-web/" target='_blank' title="Ver proyecto Weather App" class="project__view">
+                    <img src="./assets/img/weather@2x.png" alt="Portada proyecto Weather App" class="project__img">
                 </a>
 
 
@@ -165,8 +168,8 @@
                             <li>JavaScript</li>
                             <li>Adobe Xd</li>
                         </ul>
-                        <button class="project__info__button"> Ver código</button>
-
+                        <a class="project__info__code" target='_blank' title="Ver código del proyecto" href="https://github.com/joaruibu/Weather-web"> Ver código</a>
+ 
                     </div>
 
                 </div>
@@ -175,8 +178,8 @@
             <article class="work__project marginRight">
 
                 <h3 class="project__title"> Black jack</h3>
-                <a href="#" target='_blank' title=""  class="project__view">
-                    <img src="./assets/img/black_jack@2x.png" alt="" class="project__img">
+                <a href="https://joaruibu.github.io/black-jack-game/" target='_blank' title="Ver proyecto Black jack"  class="project__view">
+                    <img src="./assets/img/black_jack@2x.png" alt="Portada proyecto Black jack" class="project__img">
 
                 </a>
 
@@ -193,7 +196,8 @@
                             <li>JavaScript</li>
                             <li>Adobe Xd</li>
                         </ul>
-                        <button class="project__info__button"> Ver código</button>
+                        <a class="project__info__code" target='_blank' title="Ver código del proyecto" href="https://github.com/joaruibu/black-jack-game"> Ver código</a>
+
 
                     </div>
 
@@ -203,8 +207,8 @@
             <article class="work__project marginRight">
 
                 <h3 class="project__title"> To do </h3>
-                <a href="#" target='_blank' title="" class="project__view">
-                    <img src="./assets/img/todo@2x.png" alt="" class="project__img">
+                <a href="https://joaruibu.github.io/ToDo-portfolio/" target='_blank' title="Ver proyecto To do" class="project__view">
+                    <img src="./assets/img/todo@2x.png" alt="Portada proyecto To do" class="project__img">
 
                 </a>
 
@@ -219,9 +223,9 @@
                         <ul class="project__info__skills ">
                             <li>HTML / CSS</li>
                             <li>JavaScript</li>
-                            <li>Adobe Xd</li>
                         </ul>
-                        <button class="project__info__button"> Ver código</button>
+                        <a class="project__info__code" target='_blank'title="Ver código del proyecto" href="https://github.com/joaruibu/ToDo-portfolio"> Ver código</a>
+
 
                     </div>
 
@@ -276,7 +280,7 @@
 
             <!---------------- Work Experience --------------->
 
-            <h3 class="about__subtitle">Experiencia Laboral</h3>
+            <h3 id="resume" class="about__subtitle">Experiencia Laboral</h3>
 
 
             <article class="about__info marginRight">
@@ -446,6 +450,7 @@
                         Joaquín es un ser afable, amable desde las 8:00 de la mañana, a Joaquín no le hace falta tomar
                         café para estar activo a primera hora. Joaquín no habla de política ni de religión, él no se
                         queja, se presta.
+                    </p>
 
                     <p class="about__info__paragraph">Joaquín ve el problema antes que surja y si no lo ve y el problema
                         proviene de su trabajo, Joaquín no pone excusa alguna, solo pone buen carácter y soluciones.
@@ -532,6 +537,20 @@
 
             </article>
 
+
+            <!---------------- Idiomas --------------->
+            <h3 class="about__subtitle"> LENGUAJES</h3>
+
+            <article class="about__skills marginRight">
+                <div class="">
+                    <h4 class="about__info__title">INGLES</h4>
+                    <p class="about__info__paragraph">
+                       b2
+                    </p>
+                </div>
+
+            </article>
+
         </section>
 
         <!---------------- Contact --------------->
@@ -541,14 +560,14 @@
             <h2 id="contact" class="contact__title ">Contact</h2>
             <secction  class="contact__info ">
 
-                <a class="contact__info__anchor" href="mailto:joaquinruizbueno@gmail.com" target="_blank">Email</a>
+                <a class="contact__info__link" href="mailto:joaquinruizbueno@gmail.com" target="_blank">Email</a>
                 <hr class="contact__info__line marginRight">
 
 
-                <a class="contact__info__anchor" href="https://github.com/joaruibu" target="_blank">Github</a>
+                <a class="contact__info__link" href="https://github.com/joaruibu" target="_blank">Github</a>
                 <hr class="contact__info__line marginRight">
 
-                <a class="contact__info__anchor " href="https://www.linkedin.com/in/joaquín-ruiz" target="_blank">Linkedin</a>
+                <a class="contact__info__link " href="https://www.linkedin.com/in/joaquín-ruiz" target="_blank">Linkedin</a>
                 <hr class="contact__info__line marginRight">
 
             </secction>
