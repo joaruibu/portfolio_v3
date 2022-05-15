@@ -277,6 +277,10 @@ main {
   letter-spacing: 1em;
   margin-bottom: 0.5em;
 }
+.project__miniature {
+  z-index: 100;
+  position: relative;
+}
 .project__img {
   width: 100%;
   margin-bottom: 2vw;

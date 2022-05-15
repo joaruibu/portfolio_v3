@@ -50,7 +50,6 @@ if (!isTouch) {
         link.addEventListener('mouseover', () => {
             if (link.className !== 'project__view') {
                 mouseCursor.classList.add('cursor-scaleSmall');
-                console.log('dentro caja pequeña')
 
             } else {
                 mouseCursor.classList.add('cursor-scaleBig');
@@ -63,11 +62,11 @@ if (!isTouch) {
         link.addEventListener('mouseleave', () => {
             if (link.className !== 'project__view') {
                 mouseCursor.classList.remove('cursor-scaleSmall')
-                console.log('fuera caja pequeña')
+
             } else {
                 mouseCursor.classList.remove('cursor-scaleBig');
                 mouseText.classList.remove('visibility')
-                console.log('fuera caja grande')
+
             }
         })
     })
