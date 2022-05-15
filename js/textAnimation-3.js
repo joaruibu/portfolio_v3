@@ -3,24 +3,19 @@
 var tl2 = new TimelineMax({ onUpdate: updatePercentage });
 const controller2 = new ScrollMagic.Controller();
 
-
-tl2.from(".contact__title", 1, { x: "30vw", opacity: 0 });
-
-
+tl2.from(".resume__title", 1, { x: "60vw", opacity: 0 });
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: ".contact__title",
-    triggerHook: "onCenter",
-    duration: "50%",
+  triggerElement: ".resume__title",
+  triggerHook: "onCenter",
+  duration: "60%",
+})
 
-})  
-    
-  .setPin(".contact__title")
+  .setPin(".resume__title")
   .setTween(tl2)
-    .addTo(controller2);
-  
+  .addTo(controller2);
 
-    function updatePercentage(){
-        tl2.progress();
-    }
-    
+function updatePercentage() {
+  tl2.progress();
+}
+
